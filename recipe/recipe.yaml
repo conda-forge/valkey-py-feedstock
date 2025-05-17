@@ -16,8 +16,8 @@ build:
   script:
     env:
       PIP_USE_PEP517: "1"
-      PIP_NO_BUILD_ISOLATION: "1"
-    content: "python -m pip install ."
+    content: 
+      - "python -m pip install --no-build-isolation ."
 
 requirements:
   host:
