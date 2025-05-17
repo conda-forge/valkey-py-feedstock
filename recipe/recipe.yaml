@@ -12,9 +12,12 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script:
-    content: "python -m pip install --use-pep517 --no-build-isolation ."
+    env:
+      PIP_USE_PEP517: "1"
+    content: 
+      - "python -m pip install --no-build-isolation ."
 
 requirements:
   host:
@@ -24,6 +27,15 @@ requirements:
   run:
     - python >=${{ python_min }}
     - async-timeout >=4.0.3
+
+  # https://github.com/valkey-io/valkey-py/blob/12004ca23f5df5d43326ca600703d26ec2387e9a/setup.py#L59-L61
+  run_constraints:
+    - libvalkey-py >=4.0.1
+
+    - "cryptography >=36.0.1"
+    - "requests >=2.31.0"
+
+    - "pyopenssl >=23.2.1"
 
 tests:
   - python:
