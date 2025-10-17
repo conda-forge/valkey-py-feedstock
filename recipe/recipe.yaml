@@ -9,7 +9,7 @@ package:
 source:
   # url: https://github.com/valkey-io/valkey-py/archive/refs/tags/v${{ version }}.zip
   url: 'https://github.com/valkey-io/valkey-py/archive/b0d9b12d29f94d7f89dfb4a7cccfde2a07c2a7c8.zip'
-  sha256: 3032d5d6d546a9ccf5238b7c68555e8e193f28eb8daaaf8d5657a93ad471e33b
+  sha256: 5cf4cb438690cc28312a8c22a804df105749b281118301c9694b69d6b84d529f
 
 build:
   noarch: python
