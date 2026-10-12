@@ -1,6 +1,6 @@
 context:
   name: "valkey"
-  version: "6.1.1"
+  version: "6.2.0"
 
 package:
   name: "valkey-py"
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/valkey-io/valkey-py/archive/refs/tags/v${{ version }}.zip
-  sha256: 3032d5d6d546a9ccf5238b7c68555e8e193f28eb8daaaf8d5657a93ad471e33b
+  sha256: 97c7a262463ca8140e301e17c1f1b76965e7096156396aca4afa6b9415455572
 
 build:
   noarch: python
